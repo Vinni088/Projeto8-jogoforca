@@ -1,0 +1,105 @@
+/*Ajuster Gerais*/
+* {
+  box-sizing: border-box;
+}
+
+
+/*Ajuster para o App*/
+.App {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 60px;
+}
+
+/*Ajuster para o Jogo*/
+.img_status {
+    position: fixed;
+    top: 60px;
+    left: 40px;
+    height: 55%;
+}
+.Adivinhando {
+    position: fixed;
+    bottom: 32%;
+    right: 55px;
+
+    width: 323px;
+    height: 68px;
+    
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #000000;
+}
+.pickword {
+    position: fixed;
+    top: 90px;
+    right: 55px;
+    
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    cursor: pointer;
+}
+/*Ajustes para Letras.js*/
+.letras {
+    width: 665px;
+    height: 92px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    
+}
+.letra {
+    width: 40px;
+    height: 40px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #798A9F;
+    background: #9FAAB5;
+    border: 1px solid #7AA7C7;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+.bottom {
+    position: fixed;
+    bottom: 14%;
+    left: 0%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.escondido {
+    display: hidden;
+}
