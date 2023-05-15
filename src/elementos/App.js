@@ -19,6 +19,10 @@ export default function App() {
   let [Guess_Status, setGS] = useState([]);
   let [Letters_guessed, setLG] = useState([]);
 
+  let [rights, setRT] = useState(1);
+  let [wrongs, setWR] = useState(1);
+  let [result, setResult] = useState('Adivinhando');
+  let [restart, setRestart] = useState(false);
   /* Return */
   return (
     <div className='App'>
@@ -37,6 +41,14 @@ export default function App() {
       setGS = {setGS}
       Letters_guessed={Letters_guessed}
       setLG = {setLG}
+      rights = {rights}
+      setRT = {setRT}
+      wrongs = {wrongs}
+      setWR = {setWR}
+      result = {result}
+      setResult = {setResult}
+      restart = {restart}
+      setRestart = {setRestart}
       />
 
       <Letras 
@@ -54,6 +66,12 @@ export default function App() {
       setGS = {setGS}
       Letters_guessed={Letters_guessed}
       setLG = {setLG}
+      rights = {rights}
+      setRT = {setRT}
+      wrongs = {wrongs}
+      setWR = {setWR}
+      result = {result}
+      setResult = {setResult}
       />
     </div>
   );
