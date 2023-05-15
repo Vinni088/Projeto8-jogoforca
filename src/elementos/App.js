@@ -27,51 +27,43 @@ export default function App() {
   return (
     <div className='App'>
       <Jogo 
-      index={index}
-      setIndex = {setIndex}
-      status1 = {status1}
-      setStatus1 = {setStatus1}
-      word = {word}
-      setWord = {setWord}
-      disabled_start_buttons = {disabled_start_buttons}
-      setDSB = {setDSB}
-      disabled_letter_buttons = {disabled_letter_buttons}
-      setDLB = {setDLB}
-      Guess_Status = {Guess_Status}
-      setGS = {setGS}
-      Letters_guessed={Letters_guessed}
-      setLG = {setLG}
-      rights = {rights}
-      setRT = {setRT}
-      wrongs = {wrongs}
-      setWR = {setWR}
-      result = {result}
-      setResult = {setResult}
-      restart = {restart}
-      setRestart = {setRestart}
+      index={index} /* Ok! */
+      setIndex = {setIndex} /* Ok! */
+      status1 = {status1} /* Ok! */
+      setStatus1 = {setStatus1} /* Ok! */
+      setWord = {setWord} /* Ok! */
+      disabled_start_buttons = {disabled_start_buttons} /* Ok! */
+      setDSB = {setDSB} /* Ok! */
+      setDLB = {setDLB} /* Ok! */
+      Guess_Status = {Guess_Status} /* Ok! */
+      setGS = {setGS} /* Ok! */
+      setLG = {setLG} /* Ok! */
+      setRT = {setRT} /* Ok! */
+      setWR = {setWR} /* Ok! */
+      result = {result} /* Ok! */
+      setResult = {setResult} /* Ok! */
+      restart = {restart} /* Ok! */
+      setRestart = {setRestart} /* Ok! */
       />
 
       <Letras 
-      index={index}
-      setIndex = {setIndex}
-      status1 = {status1}
-      setStatus1 = {setStatus1}
-      word = {word}
-      setWord = {setWord}
-      disabled_start_buttons = {disabled_start_buttons}
-      setDSB = {setDSB}
-      disabled_letter_buttons = {disabled_letter_buttons}
-      setDLB = {setDLB}
-      Guess_Status = {Guess_Status}
-      setGS = {setGS}
-      Letters_guessed={Letters_guessed}
-      setLG = {setLG}
-      rights = {rights}
-      setRT = {setRT}
-      wrongs = {wrongs}
-      setWR = {setWR}
-      result = {result}
-      setResult = {setResult}
+      index={index} /* Ok! */
+      setIndex = {setIndex} /* Ok! */
+      setStatus1 = {setStatus1} /* Ok! */
+      word = {word} /* Ok! */
+      setDSB = {setDSB} /* Ok! */
+      disabled_letter_buttons = {disabled_letter_buttons} /* Ok! */
+      setDLB = {setDLB} /* Ok! */
+      Guess_Status = {Guess_Status} /* Ok! */
+      setGS = {setGS} /* Ok! */
+      Letters_guessed = {Letters_guessed} /* Ok! */
+      setLG = {setLG} /* Ok! */
+      rights = {rights} /* Ok! */
+      setRT = {setRT} /* Ok! */
+      wrongs = {wrongs} /* Ok! */
+      setWR = {setWR} /* Ok! */
+      result = {result} /* Ok! */
+      setResult = {setResult} /* Ok! */
       />
     </div>
   );

@@ -9,8 +9,9 @@
 .App {
     background: #FFFFFF;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     padding: 60px;
 }
 
@@ -18,13 +19,13 @@
 .img_status {
     position: fixed;
     top: 60px;
-    left: 40px;
-    height: 55%;
+    left: 7.5%;
+    height: 300px;
 }
 .Adivinhando {
     position: fixed;
-    bottom: 32%;
-    right: 55px;
+    top: 300px;
+    right: 7.5%;
 
     width: 323px;
     height: 68px;
@@ -42,7 +43,7 @@
 .pickword {
     position: fixed;
     top: 90px;
-    right: 55px;
+    right: 7.5%;
     
     width: 200px;
     height: 60px;
@@ -99,10 +100,9 @@
 }
 .bottom {
     position: fixed;
-    bottom: 14%;
-    left: 0%;
+    top: 400px;
+    left: 0px;
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,4 +119,26 @@
 }
 #word {
     transition-duration: 0s;
+}
+
+@media (max-width: 700px) {
+	.img_status {
+        position: unset;
+        width: 80%;
+    }
+    .Adivinhando {
+        position: unset;
+        width: 80%;
+        text-align: center;
+    }
+    .pickword {
+        position: unset;
+        width: 80%;
+        margin-top: 20px;
+    }
+    .bottom {
+        position: unset;
+        width: 100%;
+        padding: 20px;
+    }
 }
