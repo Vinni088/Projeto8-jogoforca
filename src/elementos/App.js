@@ -16,6 +16,9 @@ export default function App() {
   let [disabled_start_buttons, setDSB] = useState(false);
   let [disabled_letter_buttons, setDLB] = useState(true);
 
+  let [Guess_Status, setGS] = useState([]);
+  let [Letters_guessed, setLG] = useState([]);
+
   /* Return */
   return (
     <div className='App'>
@@ -30,6 +33,10 @@ export default function App() {
       setDSB = {setDSB}
       disabled_letter_buttons = {disabled_letter_buttons}
       setDLB = {setDLB}
+      Guess_Status = {Guess_Status}
+      setGS = {setGS}
+      Letters_guessed={Letters_guessed}
+      setLG = {setLG}
       />
 
       <Letras 
@@ -43,6 +50,10 @@ export default function App() {
       setDSB = {setDSB}
       disabled_letter_buttons = {disabled_letter_buttons}
       setDLB = {setDLB}
+      Guess_Status = {Guess_Status}
+      setGS = {setGS}
+      Letters_guessed={Letters_guessed}
+      setLG = {setLG}
       />
     </div>
   );
