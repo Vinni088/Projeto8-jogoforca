@@ -1,4 +1,4 @@
-import palavras from "./palavras.js"
+import palavras from "../palavras.js"
 import status from "./status.js";
 
 export default function Jogo(props) {
