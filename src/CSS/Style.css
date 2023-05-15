@@ -117,3 +117,6 @@
 .lose {
     color: red;
 }
+#word {
+    transition-duration: 0s;
+}
