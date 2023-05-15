@@ -18,20 +18,24 @@ export default function Jogo(props) {
             /* ajuste: restart */
             props.setResult('Adivinhando');
             props.setLG([]);
-            props.setRT(1); /* ok */
-            props.setWR(1); /* ok */
+            props.setRT(1); 
+            props.setWR(1); 
+            let nextindex = 0;
+            let nextstatus = [...status]
+            props.setIndex(nextindex);
+            props.setStatus1(nextstatus[nextindex]); 
         } else if(props.restart) {
-            props.setIndex(0); /* ok */
-            props.setStatus1(status[props.index]); /* ok */
-            props.setWord(''); /* ok */
-            props.setDSB(false); /* ok */
-            props.setDLB(true); /* ok */
-            props.setRT(1); /* ok */
-            props.setWR(1); /* ok */
-            props.setGS([]); /* ok */
+            props.setIndex(0); 
+            props.setStatus1(status[props.index]); 
+            props.setWord(''); 
+            props.setDSB(false); 
+            props.setDLB(true); 
+            props.setRT(1); 
+            props.setWR(1);
+            props.setGS([]); 
             props.setLG([]);
-            props.setResult('Adivinhando'); /* ok */
-            props.setRestart(false); /* ok */
+            props.setResult('Adivinhando'); 
+            props.setRestart(false); 
             
         }
 

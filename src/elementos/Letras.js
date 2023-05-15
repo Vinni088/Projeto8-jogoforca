@@ -5,8 +5,9 @@ export default function Controles(props) {
     function error() {
         if( props.index <= 5) {
             let nextindex = props.index + 1;
+            let nextstatus = [...status]
             props.setIndex(nextindex);
-            props.setStatus1(status[nextindex]);
+            props.setStatus1(nextstatus[nextindex]);
         } else {
             let nextindex = 0;
             props.setIndex(nextindex);
@@ -33,14 +34,15 @@ export default function Controles(props) {
             error();
             props.setWR(atualize2);
         }
-        if( props.rights === props.word.length ){
+        if( atualize1 === props.word.length+1 ){
             props.setResult('Adivinhando win');
             props.setDLB(true);
             props.setDSB(false);
-        } else if( props.wrongs === 6 ){
+        } else if(atualize2 === 7 ){
             props.setResult('Adivinhando lose');
             props.setDLB(true);
             props.setDSB(false);
+            props.setGS(props.word)
         }
     }
     return(

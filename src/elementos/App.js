@@ -19,7 +19,7 @@ export default function App() {
   let [Guess_Status, setGS] = useState([]);
   let [Letters_guessed, setLG] = useState([]);
 
-  let [rights, setRT] = useState(1);
+  let [rights, setRT] = useState(0);
   let [wrongs, setWR] = useState(1);
   let [result, setResult] = useState('Adivinhando');
   let [restart, setRestart] = useState(false);
