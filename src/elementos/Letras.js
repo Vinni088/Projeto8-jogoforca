@@ -49,7 +49,7 @@ export default function Controles(props) {
             {alfabeto.map( (letra) => 
             {if(props.Letters_guessed.includes(letra)) {
                 return(<li key={letra}>
-                <button 
+                <button data-test="letter"
                     className="letra" 
                     disabled={true}
                     onClick={() => chute(letra)}>
@@ -58,7 +58,8 @@ export default function Controles(props) {
                 </li>);
             } else {
                 return(<li key={letra}>
-                <button className="letra" 
+                <button data-test="letter"
+                className="letra" 
                 disabled={props.disabled_letter_buttons}
                 onClick={() => chute(letra)}>
                     {letra} 

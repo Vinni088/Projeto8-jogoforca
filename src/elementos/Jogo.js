@@ -38,9 +38,9 @@ export default function Jogo(props) {
     }
     return(
         <div className="GameSpace">
-            <img className="img_status" alt="Imagem de status" src={props.status1} />
-            <button disabled={props.disabled_start_buttons} onClick={pickWord} className="pickword"> Escolher Palavra </button>
-            <div className={props.result} > {props.Guess_Status} </div>
+            <img data-test="game-image" className="img_status" alt="Imagem de status" src={props.status1} />
+            <button data-test="choose-word" disabled={props.disabled_start_buttons} onClick={pickWord} className="pickword"> Escolher Palavra </button>
+            <div data-test="word" className={props.result} > {props.Guess_Status} </div>
         </div>
     );
 }
